@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Stopwatch Application
 
-## Getting Started
+A simple stopwatch application built with Next.js and React. This app features start/pause/reset functionality and allows users to record lap times.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Start and pause the stopwatch.
+- Reset the stopwatch and record lap times.
+- Display elapsed time in minutes, seconds, and milliseconds.
+- View recorded lap times in reverse order (latest first).
+- Delete individual lap times.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js**: A React framework for server-rendered applications.
+- **React**: JavaScript library for building user interfaces.
+- **React Icons**: A library of icons to enhance the UI.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+To run this application locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/KigoJomo/PRODIGY_WD_02
+   cd PRODIGY_WD_02
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Install the required dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+- Click the **Play** button to start the stopwatch.
+- Click the **Pause** button to pause the stopwatch.
+- Click the **Reset** button to stop the stopwatch and record the current lap time.
+- Click the trash icon next to a lap time to delete it.
+
+## Customization
+
+Feel free to modify styles and functionalities to suit your needs. The UI can be customized using Tailwind CSS or any other CSS framework.
+
+## Contributing
+
+If you'd like to contribute to this project, please fork the repository and create a pull request.

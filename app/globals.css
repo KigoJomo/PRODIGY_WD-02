@@ -73,6 +73,22 @@ p {
   animation: bg 25s linear infinite;
 }
 
+@keyframes appear {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.appear {
+  animation: appear 0.3s ease;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
 html body {
   color: var(--foreground);
   background: var(--background);
