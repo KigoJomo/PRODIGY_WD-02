@@ -61,7 +61,7 @@ const Stopwatch = () => {
 
   return (
     <section className="w-full h-full p-4 flex flex-col md:flex-row items-center gap-6 bg-[url('/images/bg.webp')] bg-cover bg-center bg-no-repeat scaling-bg">
-      <div className="stop-watch w-full md:w-3/5 h-3/5 md:h-full p-4 border-2 border-purple-600 bg-black bg-opacity-50 backdrop-blur-sm rounded-3xl shadow-2xl order-1 md:order-2      flex flex-col items-center justify-center gap-6">
+      <div className="stop-watch w-full md:w-3/5 h-3/5 md:h-full p-4 border-2 border-purple-600 bg-black bg-opacity-50 backdrop-blur-sm rounded-3xl shadow-2xl       flex flex-col items-center justify-center gap-6">
         <p className="">Stopwatch</p>
 
         <FormattedTime time={time} />
@@ -91,7 +91,7 @@ const Stopwatch = () => {
         </div>
       </div>
 
-      <div className="lap-records w-full md:w-2/5 h-2/5 md:h-full border-2 border-purple-600 bg-black bg-opacity-50 backdrop-blur-sm rounded-3xl shadow-2xl order-2 md:order-1    p-4 pb-0 flex flex-col gap-2">
+      <div className="lap-records w-full md:w-2/5 h-2/5 md:h-full border-2 border-purple-600 bg-black bg-opacity-50 backdrop-blur-sm rounded-3xl shadow-2xl     p-4 pb-0 flex flex-col gap-2">
         <h3 className=''>lap times</h3>
         <hr />
         <div className="w-full h-full overflow-y-scroll flex flex-col gap-2 scrollbar-hidden" ref={lapsRef}>
