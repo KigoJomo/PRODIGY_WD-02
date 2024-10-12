@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Share+Tech+Mono&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Share+Tech+Mono&display=swap');
+
 :root {
   --background: #171717;
   --background-transparent: #17171752;
@@ -13,68 +15,74 @@
     text-wrap: balance;
   }
 }
-* {
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
   text-transform: capitalize;
 }
 
-h1 {
+h1{
   font-size: 4.5rem;
 }
 
-h2 {
+h2{
   font-size: 3rem;
 }
 
-h3 {
+h3{
   font-size: 2rem;
 }
 
-p {
+p{
   font-size: 1rem;
 }
 
-.tech {
+.tech{
   font-family: "Share Tech Mono", monospace;
 }
 
 @keyframes clicked {
-  from {
+  from{
     background-color: var(--background);
   }
-  to {
+  to{
     background-color: var(--background-transparent);
   }
 }
-.clicked {
+
+.clicked{
   animation: none;
-}
-.clicked:hover {
-  animation: clicked 0.3s ease;
+  &:hover{
+    animation: clicked .3s ease;
+  }
 }
 
-@keyframes bg {
-  0% {
+@keyframes bg{
+  0%{
     background-size: 400%;
   }
-  50% {
+  50%{
     background-size: 600%;
   }
-  100% {
+  100%{
     background-size: 400%;
   }
 }
-.scaling-bg {
+
+.scaling-bg{
   animation: bg 25s linear infinite;
 }
 
-html body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: "Afacad Flux", sans-serif;
+
+html {
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: "Afacad Flux", sans-serif;
+  }
 }
